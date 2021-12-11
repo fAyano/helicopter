@@ -49,7 +49,7 @@ difference{
 }
 rotate<180,180,0>
 }
-//window
+//窓
 union{
 difference{
 	object{
@@ -63,7 +63,7 @@ difference{
 }
 rotate<0,180,0>
 }
-//back
+//黒い部分
 object{
     Round_Box_Union(<4,0,0.2>, <1,-0.4,-0.2>, .2)
      pigment{color Red}
@@ -71,7 +71,7 @@ object{
     scale<1.2,0,0>
 }
 
-//——wings——
+//——プロペラ——
 //base
 object{cylinder{<0, 0, 0>, <0, 1,0>, 0.5}
 	translate<0.3,1,0>
@@ -150,6 +150,8 @@ object{
 
 
 //——string——
+//文字を入れる
+//pngファイルを読み込み、出力する
 difference{
 object{
 	height_field{png"nihongo.png"}
